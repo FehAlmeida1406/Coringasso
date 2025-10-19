@@ -3,24 +3,22 @@
   object-fit: cover;
 }
 body {
+    padding-top: 70px;
     background-color: #f8f9fa;
     width: 100%;
     margin: 0;
     padding: 0;
-    /* Garante que o conteúdo não cause scroll horizontal não intencional */
     overflow-x: hidden; 
 }
 .hero-section {
-    /* Mude para o caminho correto da sua imagem */
     background: url('../img/banner.jpeg') no-repeat center center;
     
     background-size: cover; 
-    min-height: 500px; /* Altura mínima da seção */
+    min-height: 500px;
     
     position: relative;
     z-index: 1;
 }
-/* Cria o overlay escuro para melhorar a leitura do texto */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -28,11 +26,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Cor preta com 50% de opacidade (ajuste o 0.5) */
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: -1; 
 }
-/* Garante que o texto fique acima do overlay */
 .hero-section .container-fluid {
     position: relative;
     z-index: 2; 
